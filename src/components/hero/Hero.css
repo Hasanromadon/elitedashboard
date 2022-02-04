@@ -1,0 +1,14 @@
+.bid-amount {
+    @apply text-3xl font-semibold;
+    background: linear-gradient(133.47deg, #2E59DA 4%, #7E4CE3 96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.time-box {
+    background: linear-gradient(180deg, #FFFFFF -412.5%, rgba(255, 255, 255, 0) 137.5%);
+    backdrop-filter: blur(210px);
+    border-radius: 12px;
+    @apply p-2;
+}
