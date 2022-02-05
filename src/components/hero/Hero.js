@@ -5,7 +5,7 @@ import TimeBox from '../timebox/Timebox';
 
 const Hero = () => {
   return(
-    <div className='bg-shade border border-violet-500 rounded-3xl py-6 px-4 '>
+    <div className='bg-shade border h-max border-violet-500 rounded-3xl py-6 px-4 '>
         <div className='flex gap-5 items-center' >
             <div className='hero-left'>
                <div className='flex items-center gap-3 mb-3'>

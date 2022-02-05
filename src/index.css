@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-  @apply font-poppins bg-dark text-white;
+  @apply font-poppins bg-dark text-white box-border;
 }
 

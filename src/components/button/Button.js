@@ -1,10 +1,10 @@
 import React from 'react';
 import './button.css';
 
-const Button = ({children, primary}) => {  
+const Button = ({children, primary, small , onClick}) => {  
   
     return(
-      <button className={`${primary ? 'btn-primary' : 'btn-outlined '}`}>
+      <button onClick={onClick} className={`${primary ? 'btn-primary' : 'btn-outlined '} ${small ? 'text-[10px] min-w-[76px] ' : 'text-sm '}`}>
         {children}
       </button>
   );

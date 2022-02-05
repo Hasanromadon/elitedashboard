@@ -1,6 +1,6 @@
 import React,{ useState,useEffect,useCallback } from 'react';
 
-const TimeBox = () => {
+const TimeBox = ({small}) => {
     const [time,setTime] = useState({
         days:'0',
         hours:'0',
@@ -11,6 +11,11 @@ const TimeBox = () => {
     const renderItem = (time,value) => (
         <div className='time-box inline-block'>
             {`${time} ${value}`}
+        </div>
+    )
+    const renderItemSmall = (time) => (
+        <div className='time-box inline-block text-xs'>
+            {`${time.hours}h : ${time.minutes}min : ${time.seconds}s`}
         </div>
     )
 
@@ -39,11 +44,19 @@ const TimeBox = () => {
 
 
     return(
-        <div className='flex gap-2 items-center'>
-            {renderItem(time.hours,'H')}
-            {renderItem(time.minutes,'M')}
-            {renderItem(time.seconds,'S')}
+        <>
+            {small ?
+            <>
+            {renderItemSmall(time)}
+            </>
+            : <div className='flex gap-2 items-center'>
+            {renderItem(time.hours,'H')} :
+            {renderItem(time.minutes,'M')} :
+            {renderItem(time.seconds,'S')} 
         </div>
+                
+        }
+        </>
     )
 
 }

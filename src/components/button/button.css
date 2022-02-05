@@ -1,8 +1,12 @@
 .btn-primary {
-    @apply text-sm py-2.5 px-3 rounded-lg;
+    @apply py-2.5 px-3 rounded-lg transition-all duration-200;
     background: linear-gradient(133.47deg, #2E59DA 11.26%, #7E4CE3 89.23%);
 }
+.btn-primary:hover {
+    @apply transition-all duration-200;
+    background: linear-gradient(133.47deg, #103194 11.26%, #5f37ad 89.23%);
+}
 .btn-outlined {
-    @apply text-sm py-2.5 px-3 rounded-lg border border-purple-600;
+    @apply py-2.5 px-3 rounded-lg border border-purple-600 hover:bg-purple-700;
    
 }

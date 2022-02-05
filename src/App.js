@@ -5,7 +5,7 @@ import Main from './components/main/Main';
 
 function App() {
   return (
-    <div className='flex'>
+    <div className='flex items-start'>
       <Sidebar/>
       <Main/>
     </div>
