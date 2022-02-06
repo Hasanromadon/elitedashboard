@@ -3,9 +3,9 @@ import Sectionwrapper from '../sectionwrapper/Sectionwrapper';
 
 const Balance = () => {
   return(
-    <Sectionwrapper  className='p-8 pb-12 bg-shade' title='Total Balance'>
+    <Sectionwrapper  className='sm:p-8 p-4 pb-8 mb-4 sm:mb-8 bg-shade' title='Total Balance'>
         <div className='relative'>
-            <img className='object-cover' src='./icons/card.png' alt=''/>
+            <img src='./icons/card.png' alt=''/>
            <div className='absolute top-2 sm:top-6 left-2 sm:left-6'>
                 <div className='mb-6'>
                 <p className='text-base font-normal'>Your Balance</p>

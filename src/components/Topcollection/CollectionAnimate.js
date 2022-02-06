@@ -60,8 +60,8 @@ const CardList = ({colections}) => {
                                         <span className='text-gray-50 text-[10px]'>Current Bids:</span>
                                         <span className='flex items-center text-xs'><img className='mr-1' src='./icons/eth.png' alt=''/>2.5ETH</span>
                                     </div>
-                                    <div className='flex gap-2'>
-                                        <Button small primary>Place a Bids</Button>
+                                    <div className='flex gap-1 sm:gap-2'>
+                                        <Button small primary>Place a Bid</Button>
                                         <Button small>History</Button>
                                     </div>
                                 </div>

@@ -29,7 +29,7 @@ const Creator = () => {
     ]
 
   return(
-    <Sectionwrapper more className='bg-shade p-8 my-8' title='Trending Creator'>
+    <Sectionwrapper more className='bg-shade sm:p-8 p-4' title='Trending Creator'>
         <div className='flex gap-y-4 flex-col'>
         {data.map((creator)=>(
               <Cardcreator creator={creator} key={creator.id}/>
