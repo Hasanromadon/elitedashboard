@@ -1,6 +1,5 @@
 import React, { useReducer, useState } from 'react';
 import Button from '../button/Button';
-import CardCollection from '../cardcollection/CardCollection';
 import Sectionwrapper from '../sectionwrapper/Sectionwrapper';
 import CardList from './CollectionAnimate';
 
@@ -59,7 +58,7 @@ const showfilter = (category) => {
 
   return(
       <Sectionwrapper more title='Top Collectibles'>
-          <div className='flex gap-4 mb-4'>
+          <div className='flex gap-4 mb-4 flex-wrap'>
               <Button primary={activeButton === 'all' ? true : ''} onClick={()=> showfilter('all') } >All</Button>
               <Button primary={activeButton === 'art' ? true : ''} onClick={()=> showfilter('art') }>Art</Button>
               <Button primary={activeButton === 'games' ? true : ''}  onClick={()=> showfilter('games') }>Games</Button>

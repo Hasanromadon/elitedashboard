@@ -32,12 +32,13 @@ const CardList = ({colections}) => {
 
                 leave={(d,i)=>({
                     opacity:[0],
+                    scale: [0],
                     x:[-10],
                     timing:{ duration: 400,delay: i * 50, ease:easeBackInOut}
                 })}
             >
                 { (nodes)=> (
-                    <div className='grid grid-cols-3 gap-x-3 gap-y-6'>
+                    <div className='grid  grid-cols-2 sm:grid-cols-3 gap-x-3 gap-y-6'>
                         { nodes.map(({key,data,state:{x,opacity}})=>(
                                 <div key={key} style={{
                                     opacity,

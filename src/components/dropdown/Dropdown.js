@@ -4,7 +4,7 @@ import { ChevronDownIcon, LogoutIcon } from '@heroicons/react/outline'
 
 export default function Dropdown() {
   return (
-    <div className="text-right">
+    <div className="text-right hidden sm:block">
       <Menu as="div" className="relative inline-block text-left">
         <div>
           <Menu.Button className="inline-flex justify-center w-full py-2 text-lg font-medium text-white rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">

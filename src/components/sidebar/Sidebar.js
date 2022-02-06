@@ -1,9 +1,10 @@
 import React from 'react';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({close, handleSidebar}) => {
   return(
-    <aside>
+    <aside className={`${!close ? 'hidden transition-all' : 'block fixed z-10 transition-all'} sm:block`}>
+      <button onClick={()=> handleSidebar()} className='block mb-3 sm:hidden text-3xl'>×</button>
     <img className='mb-9' src='./icons/logo.png' alt=''/>
     <nav>
     <div className='link-group'>
@@ -128,7 +129,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-      <div className='nav-link mt-36'>
+      <div className='nav-link mt-4 sm:mt-36'>
       <a href='/' className='w-full'>
             <div className='link-container items-center flex w-full text-purple-600'>
             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">

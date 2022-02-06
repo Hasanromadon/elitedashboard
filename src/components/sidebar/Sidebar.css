@@ -1,7 +1,7 @@
 aside {
     width: 260px;
     max-width: 240px;
-    @apply bg-shade border-t border-r border-b border-gray-700 pl-6 py-11 pb-56 min-h-fit;
+    @apply bg-shade border-t border-r border-b border-gray-700 pl-6 py-3 sm:py-11 pb-56 min-h-fit;
   }
 
  .icon-link {

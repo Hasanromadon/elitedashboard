@@ -12,7 +12,7 @@ const Search = ({placeholder}) => {
                   </svg>
               </button>
           </span>
-          <input type="search" name="q" className="py-4 px-3 w-96 transition-all ease-linear duration-100 text-lg text-white bg-shade rounded-md pl-12 focus:outline-none focus:bg-white focus:text-gray-900" placeholder={placeholder} autoComplete="off"/>
+          <input type="search" name="q" className="py-4 px-3 w-[80%] sm:w-96 transition-all ease-linear duration-100 text-lg text-white bg-shade rounded-md pl-12 focus:outline-none focus:bg-white focus:text-gray-900" placeholder={placeholder} autoComplete="off"/>
           </div>
        </form>
   );

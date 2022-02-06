@@ -1,6 +1,6 @@
 /* global css */
 .container-layout {
-    @apply mt-4;
+    @apply mt-2 sm:mt-4;
   }
 
  
